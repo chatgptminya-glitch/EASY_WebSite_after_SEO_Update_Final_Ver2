@@ -1242,7 +1242,7 @@ ${firstName} ${lastName}`
             Scan with your phone camera or QR code reader
           </p>
           <p className="text-xs text-gray-500">
-            Link: https://app.easyparking.smartvillage.com/download
+            Link: https://eparknm-npxaih.manus.space/
           </p>
         </div>
         
