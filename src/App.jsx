@@ -12,7 +12,7 @@ import {
 import easyLogo from './assets/easy-logo.png'
 import demoVideo from './assets/WhatsAppVideo2025-09-19at23.09.50.mp4'
 import './App.css'
-import qrCodeImage from '../assets/QR_code_Mobile_App.png'; // Import the image
+import qrCodeImage from './assets/QR_code_Mobile_App.png'; // Import the image
 
 
 function App() {
