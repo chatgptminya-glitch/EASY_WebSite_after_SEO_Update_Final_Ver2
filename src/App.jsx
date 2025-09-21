@@ -12,6 +12,8 @@ import {
 import easyLogo from './assets/easy-logo.png'
 import demoVideo from './assets/WhatsAppVideo2025-09-19at23.09.50.mp4'
 import './App.css'
+import qrCodeImage from '../assets/QR_code_Mobile_App.png'; // Import the image
+
 
 function App() {
   const [currentPage, setCurrentPage] = useState('home')
@@ -1219,46 +1221,41 @@ ${firstName} ${lastName}`
       )}
 
       {/* QR Code Modal */}
-      {showQRModal && (
-        <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 p-4">
-          <Card className="w-full max-w-md">
-            <CardHeader>
-              <CardTitle>Download EASY Parking App</CardTitle>
-              <CardDescription>Scan the QR code to download our mobile application</CardDescription>
-            </CardHeader>
-            <CardContent className="text-center space-y-4">
-              {/* QR Code Placeholder */}
-              <div className="bg-white p-8 rounded-lg inline-block">
-                <div className="w-48 h-48 bg-gray-900 flex items-center justify-center text-white text-xs leading-tight">
-                  <div className="grid grid-cols-8 gap-1">
-                    {Array.from({length: 64}, (_, i) => (
-                      <div 
-                        key={i} 
-                        className={`w-2 h-2 ${Math.random() > 0.5 ? 'bg-black' : 'bg-white'}`}
-                      ></div>
-                    ))}
-                  </div>
-                </div>
-              </div>
-              
-              <div className="space-y-2">
-                <p className="text-sm text-gray-600">
-                  Scan with your phone camera or QR code reader
-                </p>
-                <p className="text-xs text-gray-500">
-                  Link: https://app.easyparking.smartvillage.com/download
-                </p>
-              </div>
-              
-              <div className="flex gap-2 pt-4">
-                <Button variant="outline" onClick={() => setShowQRModal(false)} className="w-full">
-                  Close
-                </Button>
-              </div>
-            </CardContent>
-          </Card>
+     // replacing QRModal with QRimage
+
+{showQRModal && (
+  <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 p-4">
+    <Card className="w-full max-w-md">
+      <CardHeader>
+        <CardTitle>Download EASY Parking App</CardTitle>
+        <CardDescription>Scan the QR code to download our mobile application</CardDescription>
+      </CardHeader>
+      <CardContent className="text-center space-y-4">
+        
+        {/* Replace the placeholder with the actual QR code image */}
+        <div className="bg-white p-4 rounded-lg inline-block">
+          <img src={qrCodeImage} alt="Download EASY Parking App QR Code" className="w-48 h-48" />
         </div>
-      )}
+        
+        <div className="space-y-2">
+          <p className="text-sm text-gray-600">
+            Scan with your phone camera or QR code reader
+          </p>
+          <p className="text-xs text-gray-500">
+            Link: https://app.easyparking.smartvillage.com/download
+          </p>
+        </div>
+        
+        <div className="flex gap-2 pt-4">
+          <Button variant="outline" onClick={() => setShowQRModal(false)} className="w-full">
+            Close
+          </Button>
+        </div>
+      </CardContent>
+    </Card>
+  </div>
+)}
+      
     </div>
   )
 }
