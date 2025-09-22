@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-   <url>
-      <loc>https://www.easyparking.store/</loc>
-      <lastmod>2025-09-22</lastmod>
-      <changefreq>weekly</changefreq>
-      <priority>1.0</priority>
-   </url>
-</urlset>
+<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <sitemap>
+    <loc>https://www.example.com/sitemap1.xml.gz</loc>
+    <lastmod>2024-08-15</lastmod>
+  </sitemap>
+  <sitemap>
+    <loc>https://www.example.com/sitemap2.xml.gz</loc>
+    <lastmod>2022-06-05</lastmod>
+  </sitemap>
+</sitemapindex>
