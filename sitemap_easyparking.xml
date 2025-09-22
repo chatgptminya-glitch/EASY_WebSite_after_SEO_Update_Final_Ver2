@@ -1,11 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <sitemap>
-    <loc>https://www.example.com/sitemap1.xml.gz</loc>
-    <lastmod>2024-08-15</lastmod>
-  </sitemap>
-  <sitemap>
-    <loc>https://www.example.com/sitemap2.xml.gz</loc>
-    <lastmod>2022-06-05</lastmod>
-  </sitemap>
-</sitemapindex>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>https://easyparking.store/</loc>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://easyparking.store/about</loc>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://easyparking.store/contact</loc>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://easyparking.store/pricing</loc>
+    <priority>0.7</priority>
+  </url>
+</urlset>
